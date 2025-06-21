@@ -1,0 +1,404 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080808;
+  color: #ffffff;
+  padding-top: 100px;
+}
+
+h1, h2, h3 {
+  color: #00ffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Glowing and Underlined Section Headings */
+h2 {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  color: #00ffff;
+  margin-bottom: 40px;
+  text-shadow: 0 0 2px #00ffff, 0 0 5px #00ffff;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #00ffff;
+  margin: 12px auto 0;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #00ffff;
+}
+
+
+p {
+  line-height: 1.6;
+}
+
+/* Header Styling */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  padding: 20px 10%;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00ffff;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav ul li a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.nav ul li a:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+/* Sections */
+.section {
+  padding: 80px 10%;
+}
+
+.section:nth-of-type(odd) {
+  background: #111;
+}
+
+.section:nth-of-type(even) {
+  background: #1a1a1a;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  padding: 80px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 .highlight {
+  color: #00ffff;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  color: #ccc;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 250px !important;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Skills */
+.skills-desc {
+  color: #ccc;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.skill-box {
+  background: #111;
+  border: 1px solid #2c2c2c;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.05);
+}
+
+.skill-box h3 {
+  margin-bottom: 20px;
+  color: #00ffff;
+  font-size: 1.2rem;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #1f1f1f;
+  border: 1px solid #2d2d2d;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #ccc;
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+}
+
+.skill-tag img {
+  width: 20px;
+  height: 20px;
+}
+
+.skill-tag:hover {
+  background-color: #00ffff20;
+  color: #fff;
+}
+
+.skill-boxes {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.skill-card {
+  flex: 1;
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background-color: #333;
+}
+
+.icons img {
+  width: 50px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Education */
+.timeline-item {
+  margin-bottom: 30px;
+  padding: 15px;
+  background: #333;
+  border-left: 5px solid #00ffff;
+  border-radius: 8px;
+}
+
+/* Projects */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.project-card {
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  background-color: #333;
+}
+
+.project-card img{
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 15px;
+}
+
+
+.project-card h3 {
+  color: #00ffff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.project-card p {
+  flex: 1;
+  color: #ddd;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.project-btn {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  background: #00ffff;
+  color: #000;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-btn:hover {
+  background: #00cccc;
+}
+
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+}
+
+input,
+textarea,
+button {
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+input,
+textarea {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+button {
+  background: #00ffff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: #00cccc;
+}
+
+#contact-form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* Footer */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 30px 20px;
+  color: #aaa;
+}
+
+footer .social-icons {
+  margin: 10px 0;
+}
+
+footer .social-icons a {
+  color: #00ffff;
+  margin: 0 10px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: transform 0.2s, color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
