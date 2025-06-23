@@ -13,7 +13,7 @@ html {
 body {
   background: #080808;
   color: #ffffff;
-  padding-top: 60px; /* Reduced padding-top */
+  padding-top: 80px; /* Match header height */
 }
 
 h1, h2, h3 {
@@ -54,14 +54,12 @@ p {
   left: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.95);
-  padding: 0px 10%; /* Reduced padding */
+  padding: 0 10%;
+  height: 80px; /* Fixed height */
   z-index: 1000;
   box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
   backdrop-filter: blur(10px);
-  height: 80px; /* Or whatever height you prefer */
-  padding: 0 10%;
-  overflow: visible;/* Optional: max height for header */
-  /* overflow: hidden; */
+  overflow: visible;
 }
 
 .logo {
@@ -74,6 +72,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
 .nav ul {
@@ -97,7 +96,7 @@ p {
 }
 
 .logo img {
-  height: 60px; /* Reduced logo height */
+  height: 60px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -113,10 +112,7 @@ p {
 /* Sections */
 .section {
   padding: 80px 10%;
-}
-
-.section {
-  scroll-margin-top: 60px; /* Adjusted for new header height */
+  scroll-margin-top: 80px;
 }
 
 .section:nth-of-type(odd) {
@@ -250,37 +246,6 @@ p {
   color: #fff;
 }
 
-.skill-boxes {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.skill-card {
-  flex: 1;
-  background: #2a2a2a;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.skill-card:hover {
-  transform: translateY(-5px);
-  background-color: #333;
-}
-
-.icons img {
-  width: 50px;
-  margin: 10px;
-  transition: transform 0.3s;
-}
-
-.icons img:hover {
-  transform: scale(1.2);
-}
-
 /* Education */
 .timeline-item {
   margin-bottom: 30px;
@@ -316,7 +281,7 @@ p {
   background-color: #333;
 }
 
-.project-card img{
+.project-card img {
   width: 100%;
   height: 260px;
   object-fit: cover;
