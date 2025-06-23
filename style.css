@@ -58,8 +58,10 @@ p {
   z-index: 1000;
   box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
   backdrop-filter: blur(10px);
-  max-height: 60px; /* Optional: max height for header */
-  overflow: hidden;
+  height: 80px; /* Or whatever height you prefer */
+  padding: 0 10%;
+  overflow: visible;/* Optional: max height for header */
+  /* overflow: hidden; */
 }
 
 .logo {
